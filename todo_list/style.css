@@ -1,0 +1,289 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    line-height: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.container-left {
+    width: 40%;
+    border-radius: 10px;
+    background-color: rgb(241, 238, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 200px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+}
+
+.text , .textFilter{
+    width: 50%;
+    padding: 35px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    
+
+}
+
+.text::placeholder , .textFilter::placeholder{
+    font-size: 20px;
+    border-bottom: 1px solid rgb(181, 179, 179);
+    padding-left: 7px ;
+    
+}
+
+.text:focus , .textFilter:focus {
+    outline: none;
+}
+
+.addTodo {
+    border: none;
+    border-radius: 50%;
+    background: #30cef6;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+    position: absolute;
+    z-index: 100;
+    top: 80px;
+    left: calc(50% - 40px);
+    box-shadow: 0 -5px 5px rgb(159, 157, 157);
+
+}
+
+.container-right {
+    width: 40%;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(241, 238, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+article {
+    width: 56%;
+    height: 60%;
+    position: relative;
+    background-color: #fff;
+    overflow-y: scroll;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+article::-webkit-scrollbar {
+    visibility: hidden;
+}
+.list{
+    position: relative;
+    width: 90%;
+    height: 85%;
+    position: relative;
+    overflow-y: scroll;
+}
+.list::-webkit-scrollbar{
+visibility: hidden;
+}
+.listTodo:nth-child(all){
+    border-bottom: 1px solid gray;
+}
+
+.todoLi {
+
+    padding: 15px;
+    position: relative;
+    color: #000;
+    font-size: 20px;
+}
+
+
+
+.todoLi a {
+    position: absolute;
+    right: 5px;
+}
+
+button {
+    border: none;
+    background-color: #30cef6;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
